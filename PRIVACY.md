@@ -1,6 +1,3 @@
-Here's a draft privacy policy for your "Scamdar" Chrome extension in GitHub Markdown format:
-
-```markdown
 # Privacy Policy for Scamdar Chrome Extension
 
 **Last Updated:** July 17, 2025
@@ -71,4 +68,3 @@ We may update this Privacy Policy from time to time. We will notify you of any c
 ## 9. Contact Information
 
 If you have any questions or concerns about this Privacy Policy or the data practices of the Scamdar Chrome Extension, please refer to the [Scamdar GitHub Repository](https://github.com/dankritz/scamdar) for support and contact information.
-```
