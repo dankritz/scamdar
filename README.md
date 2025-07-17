@@ -46,7 +46,7 @@ A Chrome extension that analyzes web pages for scam indicators using OpenRouter'
    - Click the Scamdar extension icon in your toolbar
    - Click the settings button (⚙️) in the top right
    - Enter your OpenRouter API key and click "Save"
-   - You should see "✅ API Key Configured" status
+   - You should see "✅ Ready to scan" status
 
 ## Usage
 
