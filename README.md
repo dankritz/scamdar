@@ -58,6 +58,7 @@ A Chrome extension that analyzes web pages for scam indicators using OpenRouter'
    - Color-coded risk level (Green/Orange/Red)
    - Safety message and recommendations
    - Detailed analysis motivation explaining the scoring
+   - Link to this GitHub repository for updates and support
 
 ## Safety Score Interpretation
 

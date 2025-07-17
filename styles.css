@@ -325,6 +325,46 @@ body {
     text-decoration: underline;
 }
 
+/* License Notice */
+.license-notice {
+    margin-top: 16px;
+    text-align: center;
+    font-size: 11px;
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.4;
+}
+
+.license-link {
+    color: #a8c8f0;
+    text-decoration: underline;
+    transition: color 0.2s ease;
+}
+
+.license-link:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+/* Footer */
+.footer {
+    margin-top: 12px;
+    text-align: center;
+}
+
+.github-link {
+    display: inline-block;
+    font-size: 12px;
+    color: #a8c8f0;
+    text-decoration: underline;
+    padding: 4px 0;
+    transition: color 0.2s ease;
+}
+
+.github-link:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
 .legend {
     border-top: 1px solid #e9ecef;
     padding-top: 16px;
