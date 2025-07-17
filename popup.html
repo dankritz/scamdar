@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scamdar</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🛡️ Scamdar</h1>
+            <p>Website Safety Analysis</p>
+        </div>
+        
+        <div class="content">
+            <div id="mainView">
+                <div class="status-bar">
+                    <span id="apiStatus" class="api-status">⚠️ API Key Required</span>
+                    <button id="settingsBtn" class="settings-btn">⚙️</button>
+                </div>
+                
+                <button id="scanButton" class="scan-btn" disabled>
+                    <span class="scan-text">Scan Current Page</span>
+                    <div class="loading-spinner" style="display: none;"></div>
+                </button>
+            </div>
+            
+            <div id="settingsView" style="display: none;">
+                <div class="settings-header">
+                    <h3>Settings</h3>
+                    <button id="backBtn" class="back-btn">←</button>
+                </div>
+                
+                <div class="settings-form">
+                    <label for="apiKeyInput">OpenRouter API Key:</label>
+                    <input type="password" id="apiKeyInput" placeholder="Enter your OpenRouter API key" />
+                    <div class="form-buttons">
+                        <button id="saveApiKey" class="save-btn">Save</button>
+                        <button id="clearApiKey" class="clear-btn">Clear</button>
+                    </div>
+                    <p class="help-text">
+                        Get your API key from <a href="https://openrouter.ai/keys" target="_blank">OpenRouter</a>
+                    </p>
+                </div>
+            </div>
+            
+            <div id="results" class="results" style="display: none;">
+                <div class="score-container">
+                    <div class="score-circle">
+                        <span id="scoreValue" class="score-value">-</span>
+                        <span class="score-label">Safety Score</span>
+                    </div>
+                </div>
+                
+                <div id="scoreMessage" class="score-message"></div>
+                
+                <div id="motivation" class="motivation" style="display: none;">
+                    <h4>Analysis Details:</h4>
+                    <p id="motivationText"></p>
+                </div>
+                
+                <div class="legend">
+                    <div class="legend-item">
+                        <span class="legend-dot safe"></span>
+                        <span>0-30: Low Risk</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="legend-dot moderate"></span>
+                        <span>31-70: Moderate Risk</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="legend-dot high"></span>
+                        <span>71-100: High Risk</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="error" class="error" style="display: none;">
+                <p>⚠️ Unable to analyze this page. Please try again.</p>
+            </div>
+        </div>
+    </div>
+    
+    <script src="popup.js"></script>
+</body>
+</html> 
